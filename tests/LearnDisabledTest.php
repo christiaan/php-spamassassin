@@ -1,7 +1,5 @@
 <?php
 
-require_once 'BaseTestCase.php';
-
 class LearnDisabledTest extends BaseTestCase
 {
     public function setUp()
@@ -36,14 +34,14 @@ class LearnDisabledTest extends BaseTestCase
     public function testShouldThrowExceptionIfLearningIsDisabled()
     {
         $message = $this->getMessage('Spam_GTUBE.txt');
-        $this->expectedException = 'SpamAssassin_Client_Exception';
+        $this->setExpectedException('SpamAssassin_Client_Exception');
         $this->sa->learn($message, SpamAssassin_Client::LEARN_SPAM);
     }
 
     public function testShouldThrowExceptionWhenForgettingIfLearningIsDisabled()
     {
         $message = $this->getMessage('Spam_GTUBE.txt');
-        $this->expectedException = 'SpamAssassin_Client_Exception';
+        $this->setExpectedException('SpamAssassin_Client_Exception');
         $this->sa->learn($message, SpamAssassin_Client::LEARN_FORGET);
     }
 

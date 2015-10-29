@@ -1,8 +1,4 @@
 <?php
-
-require_once 'PHPUnit/Framework/TestCase.php';
-require_once 'SpamAssassin/Client.php';
-
 class BaseTestCase extends PHPUnit_Framework_TestCase
 {
     /** @var SpamAssassin_Client */

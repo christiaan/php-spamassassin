@@ -1,0 +1,21 @@
+{
+    "name": "templateria/php-spamassassin",
+    "description": "Spamd protocol client for PHP. PHP package that implements the spamd protocol specification",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Pedro Padron",
+            "email": "ppadron@php.net"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~4.3.0"
+    },
+    "autoload": {
+        "classmap" : ["SpamAssassin/"]
+    },
+    "autoload-dev": {
+        "classmap" : ["tests/"]
+    }
+}

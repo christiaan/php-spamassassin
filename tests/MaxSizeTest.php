@@ -1,12 +1,10 @@
 <?php
 
-require_once 'BaseTestCase.php';
-
 class MaxSizeTest extends BaseTestCase
 {
     public function testShouldThrowExceptionIfMessageExceedsMaxSize()
     {
-        $this->expectedException = 'SpamAssassin_Client_Exception';
+        $this->setExpectedException('SpamAssassin_Client_Exception');
 
         $params = $this->params;
 

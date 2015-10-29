@@ -1,7 +1,4 @@
 <?php
-
-require_once 'BaseTestCase.php';
-
 class ZlibCompressionTest extends BaseTestCase
 {
     public function testShouldZlibCompressionWhenAvailable()

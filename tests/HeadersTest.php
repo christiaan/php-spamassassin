@@ -1,7 +1,5 @@
 <?php
 
-require_once 'BaseTestCase.php';
-
 class HeadersTest extends BaseTestCase
 {
     public function setUp()
